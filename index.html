@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temperature converter</title>
+	<link rel="shortcut icon" href="image/pngwing.com.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="tempcalc" onsubmit="calculateTemp(); return false">
+		<h1>Temperature converter</h1>
+		<div class="container">
+			<div class="left_container">
+				<div class="heading">
+					<label for="degree">Degrees</label>
+					<input type="number" step="any" id="temp" name="temp">
+				</div>
+			</div>
+			<div class="right_container">
+				<div class="heading">
+					<label for="temptype">Type</label>
+					<select name="temptype" id="temptype">
+						<option value="cel">Celcius</option>
+						<option value="fah">Fahrenheit</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="btn">
+			<button type="submit" name="temp">Convert</button>
+		</div>
+		<div class="result">
+			<label>Result</label>
+			<span id="result_container"></span>
+		</div>
+		<script src="index.js" defer></script>
+	</form>
+</body>
+</html>
